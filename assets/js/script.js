@@ -58,10 +58,9 @@ const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
 const createSnowFlake = () => {
   const fragment = document.createDocumentFragment();
   const snowFlake = document.createElement("div");
-  //   snowFlake.textContent = "❄️";
   snowFlake.classList.add("snowFlake");
 
-  snowFlake.style.left = Math.random() * 100 + "vw";
+  snowFlake.style.left = Math.random() * 95 + "vw";
   fragment.appendChild(snowFlake);
 
   document.body.appendChild(fragment);
