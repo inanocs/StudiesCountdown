@@ -76,7 +76,7 @@ body {
 }
 
 .counter {
-  height: 90vh;
+  height: 90vmax;
   align-items: center;
   display: flex;
   flex-direction: column;
@@ -212,6 +212,7 @@ ul.social-media {
 @media screen and (min-width: 750px) {
   .counter {
     justify-content: space-around;
+    height: 90vh;
     padding: 2rem;
   }
   .counter-container {
