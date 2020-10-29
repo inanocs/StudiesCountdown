@@ -22,7 +22,7 @@ window.addEventListener("load", () => {
   });
 });
 
-// Function that setDate
+// Function that set CountDown in HTML
 const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
   const today = new Date().getTime();
   const dateEnd = new Date(2021, 5, 21, 14, 00, 00, 00).getTime();
