@@ -154,3 +154,6 @@ ul.social-media {
     transform: translateY(205vh);
   }
 }
+
+@media screen and (min-width: 700px) {
+}
