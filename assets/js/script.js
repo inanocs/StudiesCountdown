@@ -8,12 +8,17 @@ window.addEventListener("load", () => {
     setDate(daysElement, hoursElement, minutesElement, secondsElement);
   }, 1000);
 
-  setInterval(createSnowFlake, 400);
+  setInterval(createSnowFlake, 500);
 
   const toggleButton = document.getElementById("toggle");
 
   toggleButton.addEventListener("click", () => {
+    const counterBoxes = [...document.querySelectorAll(".counter-item")];
     document.body.classList.toggle("dark-mode");
+
+    counterBoxes.forEach((item) => {
+      item.classList.toggle("counter-item--dark-mode");
+    });
   });
 });
 
@@ -59,5 +64,5 @@ const createSnowFlake = () => {
 
   setTimeout(() => {
     snowFlake.remove();
-  }, 2700);
+  }, 2350);
 };
