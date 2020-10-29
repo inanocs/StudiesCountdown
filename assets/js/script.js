@@ -39,12 +39,16 @@ const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
     days++;
   }
 
-  if (minutes == 59) {
+  if (minutes == 60) {
     minutes = 0;
     minutes = minutes.toString() + "0";
     hours++;
   }
 
+  if (seconds == 60) {
+    seconds = 0;
+    seconds = seconds.toString() + "0";
+  }
   daysElement.textContent = days;
   hoursElement.textContent = hours;
   minutesElement.textContent = minutes;
