@@ -48,6 +48,7 @@ const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
   if (seconds == 60) {
     seconds = 0;
     seconds = seconds.toString() + "0";
+    minutes++;
   }
   daysElement.textContent = days;
   hoursElement.textContent = hours;

@@ -201,7 +201,11 @@ ul.social-media {
   }
   .counter-container {
     justify-content: space-evenly;
-    padding: 4rem;
+    padding: 1rem;
+  }
+
+  .counter-item {
+    padding: 1.8rem;
   }
 
   .footer {
