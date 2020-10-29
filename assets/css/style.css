@@ -136,9 +136,9 @@ ul.social-media {
   width: 40%;
 }
 
-.twitter,
-.linkedin-logo,
-.github-logo {
+.social-media-list__twitter,
+.social-media-list__linkedin-logo,
+.social-media-list__github-logo {
   fill: whitesmoke;
 }
 
