@@ -8,16 +8,19 @@ window.addEventListener("load", () => {
     setDate(daysElement, hoursElement, minutesElement, secondsElement);
   }, 1000);
 
+  setInterval(createSnowFlake, 400);
+
   const toggleButton = document.getElementById("toggle");
-  const body = document.querySelector("body");
+
   toggleButton.addEventListener("click", () => {
-    body.classList.toggle("dark-mode");
+    document.body.classList.toggle("dark-mode");
   });
 });
 
+// Function that setDate
 const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
-  const today = new Date();
-  const dateEnd = new Date(2021, 6, 21);
+  const today = new Date().getTime();
+  const dateEnd = new Date(2021, 5, 21, 14, 00, 00, 00).getTime();
 
   let totalTime = (dateEnd - today) / 1000;
 
@@ -41,4 +44,20 @@ const setDate = (daysElement, hoursElement, minutesElement, secondsElement) => {
   hoursElement.textContent = hours;
   minutesElement.textContent = minutes;
   secondsElement.textContent = seconds;
+};
+
+const createSnowFlake = () => {
+  const fragment = document.createDocumentFragment();
+  const snowFlake = document.createElement("div");
+  //   snowFlake.textContent = "❄️";
+  snowFlake.classList.add("snowFlake");
+
+  snowFlake.style.left = Math.random() * 100 + "vw";
+  fragment.appendChild(snowFlake);
+
+  document.body.appendChild(fragment);
+
+  setTimeout(() => {
+    snowFlake.remove();
+  }, 2700);
 };
