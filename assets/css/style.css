@@ -1,0 +1,132 @@
+@import url("https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@400;700;900&display=swap");
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --dark-bg: rgb(41, 41, 41);
+  --white-text: rgb(255, 255, 255);
+}
+
+img {
+  max-width: 100%;
+}
+
+.dark-mode {
+  background-color: var(--dark-bg);
+  transition: background 0.5s ease-in;
+}
+
+body {
+  background-color: rgb(14, 89, 154);
+  color: var(--white-text);
+  font-family: "Noto Sans SC", sans-serif;
+  transition: background 0.5s ease-in;
+}
+
+.header {
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.8rem;
+}
+
+.toggleCheckbox {
+  display: none;
+}
+
+.toggleCheckbox:checked + .toggleButton::before {
+  background-color: azure;
+  transform: translateX(115%);
+}
+
+.toggleCheckbox:checked + .toggleButton {
+  background-color: rgb(34, 133, 255);
+}
+
+.toggleButton {
+  background-color: rgb(200, 202, 204);
+  border-radius: 20px;
+  height: 30px;
+  position: relative;
+  transition: background 0.5s;
+  width: 50px;
+}
+
+.toggleButton::before {
+  background-color: white;
+  border-radius: 50%;
+  content: "";
+  display: block;
+  height: 20px;
+  position: absolute;
+  left: 3px;
+  top: 15%;
+  transition: transform 0.5s;
+  transition-delay: 0.15s;
+  width: 20px;
+}
+
+.counter {
+  height: 100vh;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  margin-top: 1;
+  justify-content: center;
+}
+
+.counter-desc {
+  font-size: 1.2rem;
+}
+
+.counter-item {
+  align-items: center;
+  display: flex;
+  font-size: 1.4rem;
+  margin-top: 13vh;
+}
+
+.footer {
+  padding: 2rem 0;
+  width: 100%;
+}
+ul.social-media {
+  align-items: center;
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+.social-media-list {
+  align-items: center;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+.social-media-list__item {
+  border-radius: 20%;
+  display: block;
+
+  margin: 0px auto;
+  text-align: center;
+  width: 40%;
+}
+
+.twitter,
+.linkedin-logo,
+.github-logo {
+  fill: white;
+}
+.social-media-list__item img {
+  stroke: white;
+}
+
+.footer img,
+.footer svg {
+  max-width: 70%;
+}
