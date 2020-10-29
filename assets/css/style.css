@@ -76,19 +76,19 @@ body {
   display: flex;
   flex-direction: column;
   margin-top: 1;
-  justify-content: center;
+  justify-content: space-around;
 }
 
 .counter-desc {
-  font-size: 5vw;
+  font-size: 5vmin;
 }
 
 .counter-item {
   align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 1.4rem;
-  margin-top: 11vh;
+  font-size: 4.5vmin;
+  margin-bottom: 10vh;
 }
 
 .counter-item__letter {
