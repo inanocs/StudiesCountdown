@@ -34,6 +34,10 @@ body {
   padding: 0.8rem;
 }
 
+.header-logo {
+  cursor: pointer;
+}
+
 .toggleCheckbox {
   display: none;
 }
@@ -48,6 +52,7 @@ body {
 }
 
 .toggleButton {
+  cursor: pointer;
   background-color: rgb(200, 202, 204);
   border-radius: 20px;
   height: 30px;
