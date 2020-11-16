@@ -2,8 +2,6 @@
 
 * {
   box-sizing: border-box;
-  margin: 0;
-  padding: 0;
 }
 
 :root {
@@ -24,6 +22,7 @@ body {
   background-color: rgb(14, 89, 154);
   color: var(--white-text);
   font-family: "Noto Sans SC", sans-serif;
+  margin: 0px;
   transition: background 0.5s ease-in;
 }
 
